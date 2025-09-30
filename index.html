@@ -72,21 +72,39 @@
                 <p>Make informed decisions with expert insights.</p>
               </div>
             </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <div class="stat-num">200+</div>
+                <div class="stat-label muted">Happy Customers</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">10k+</div>
+                <div class="stat-label muted">Properties For Clients</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">16+</div>
+                <div class="stat-label muted">Years of Experience</div>
+              </div>
+            </div>
           </div>
         </section>
 
         <!-- Container 2 -->
-        <section class="container layout_RBRLUI">
-          <div class="row layout_F6WTAW">
-            <div class="section-media placeholder-box">Image</div>
+        <section class="container layout_RBRLUI" id="about">
+          <div class="row layout_F6WTAW feature-split">
             <div class="section-copy">
-              <h2>Design system aligned</h2>
-              <p>Consistent spacing, colors, and typography mapped from Figma tokens.</p>
+              <h2 class="reveal">Discover Your Dream Property with Estatein</h2>
+              <p class="muted reveal">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+              <div class="cta-row">
+                <a class="btn" href="#" aria-label="Learn more">
+                  Learn More <img src="assets/icons/arrow_right.svg" alt="" width="24" height="24" />
+                </a>
+                <a class="btn btn-primary" href="#properties">Browse Properties</a>
+              </div>
             </div>
-          </div>
-          <div class="col layout_2NJEQ0">
-            <div class="placeholder-box">Bullet points</div>
-            <div class="placeholder-box">Secondary visuals</div>
+            <div class="section-media">
+              <img src="assets/property_1.png" alt="Feature" class="feature-img" />
+            </div>
           </div>
         </section>
 
@@ -225,18 +243,116 @@
           </div>
         </section>
 
-        <!-- Container 3 with form -->
-        <section class="container layout_TB8DOD">
+        <!-- Contact Form (from Figma) -->
+        <section class="container layout_TB8DOD" id="contact">
           <div class="text-container layout_XD468S">
-            <h2>Subscribe for updates</h2>
-            <p>Get product news and early access in your inbox.</p>
+            <h2 class="reveal">Let's Make it Happen</h2>
+            <p class="muted reveal">Ready to take the first step toward your dream property? Tell us a few details.</p>
           </div>
-          <form class="form layout_CD6H1E" id="subscribe-form">
-            <div class="form-row">
-              <input type="email" id="email" name="email" placeholder="Your email" required>
-              <button class="btn btn-primary" type="submit">Subscribe</button>
+          <form class="form form-full" id="contact-form">
+            <div class="grid-2">
+              <label class="field">
+                <span>First Name</span>
+                <input type="text" name="firstName" placeholder="Enter First Name" required>
+              </label>
+              <label class="field">
+                <span>Last Name</span>
+                <input type="text" name="lastName" placeholder="Enter Last Name" required>
+              </label>
             </div>
-            <small class="muted">We care about your data in our <a href="#privacy">privacy policy</a>.</small>
+            <div class="grid-2">
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Enter your Email" required>
+              </label>
+              <label class="field">
+                <span>Phone</span>
+                <input type="tel" name="phone" placeholder="Enter Phone Number">
+              </label>
+            </div>
+            <div class="grid-2">
+              <label class="field select">
+                <span>Preferred Location</span>
+                <div class="select-wrap">
+                  <select name="location">
+                    <option value="">Select Location</option>
+                    <option>California</option>
+                    <option>Florida</option>
+                    <option>Nevada</option>
+                  </select>
+                  <img src="assets/icons/chevron_down.svg" alt="" class="chev">
+                </div>
+              </label>
+              <label class="field select">
+                <span>Property Type</span>
+                <div class="select-wrap">
+                  <select name="type">
+                    <option value="">Select Property Type</option>
+                    <option>Villa</option>
+                    <option>Apartment</option>
+                    <option>Cottage</option>
+                  </select>
+                  <img src="assets/icons/chevron_down.svg" alt="" class="chev">
+                </div>
+              </label>
+            </div>
+            <div class="grid-2">
+              <label class="field select">
+                <span>No. of Bathrooms</span>
+                <div class="select-wrap">
+                  <select name="baths">
+                    <option value="">Select no. of Bathrooms</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                  </select>
+                  <img src="assets/icons/chevron_down.svg" alt="" class="chev">
+                </div>
+              </label>
+              <label class="field select">
+                <span>No. of Bedrooms</span>
+                <div class="select-wrap">
+                  <select name="beds">
+                    <option value="">Select no. of Bedrooms</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4+</option>
+                  </select>
+                  <img src="assets/icons/chevron_down.svg" alt="" class="chev">
+                </div>
+              </label>
+            </div>
+            <div class="grid-2">
+              <label class="field select">
+                <span>Budget</span>
+                <div class="select-wrap">
+                  <select name="budget">
+                    <option value="">Select Budget</option>
+                    <option>$200k-$400k</option>
+                    <option>$400k-$600k</option>
+                    <option>$600k+</option>
+                  </select>
+                  <img src="assets/icons/chevron_down.svg" alt="" class="chev">
+                </div>
+              </label>
+              <label class="field">
+                <span>Preferred Contact</span>
+                <div class="radio-row">
+                  <label class="radio"><input type="radio" name="contact" value="phone"> Phone</label>
+                  <label class="radio"><input type="radio" name="contact" value="email"> Email</label>
+                </div>
+              </label>
+            </div>
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Enter your Message here.."></textarea>
+            </label>
+            <div class="form-actions">
+              <label class="checkbox"><input type="checkbox" required> I agree with Terms of Use and Privacy Policy</label>
+              <button class="btn btn-primary" type="submit">Send Your Message</button>
+            </div>
           </form>
         </section>
 
@@ -247,9 +363,63 @@
             <a class="btn btn-primary" href="#get-started">Create your account</a>
           </div>
           <footer class="footer layout_6EUW05">
-            <div class="footer-top placeholder-box">Footer links</div>
+            <div class="footer-top">
+              <div class="footer-brand">
+                <div class="brand">YourBrand</div>
+                <form class="footer-sub" id="footer-sub">
+                  <img src="assets/icons/social_1.svg" alt="mail" width="20" height="20">
+                  <input type="email" placeholder="Enter Your Email" required>
+                  <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+              </div>
+              <div class="footer-links">
+                <div class="col">
+                  <div class="col-title muted">Home</div>
+                  <a href="#" class="link">Hero Section</a>
+                  <a href="#features" class="link">Features</a>
+                  <a href="#properties" class="link">Properties</a>
+                  <a href="#testimonials" class="link">Testimonials</a>
+                  <a href="#faq" class="link">FAQ’s</a>
+                </div>
+                <div class="col">
+                  <div class="col-title muted">About Us</div>
+                  <a href="#about" class="link">Our Story</a>
+                  <a href="#about" class="link">Our Works</a>
+                  <a href="#about" class="link">How It Works</a>
+                  <a href="#about" class="link">Our Team</a>
+                  <a href="#about" class="link">Our Clients</a>
+                </div>
+                <div class="col">
+                  <div class="col-title muted">Properties</div>
+                  <a href="#properties" class="link">Portfolio</a>
+                  <a href="#properties" class="link">Categories</a>
+                </div>
+                <div class="col">
+                  <div class="col-title muted">Services</div>
+                  <a href="#" class="link">Valuation Mastery</a>
+                  <a href="#" class="link">Strategic Marketing</a>
+                  <a href="#" class="link">Negotiation Wizardry</a>
+                  <a href="#" class="link">Closing Success</a>
+                  <a href="#" class="link">Property Management</a>
+                </div>
+                <div class="col">
+                  <div class="col-title muted">Contact Us</div>
+                  <a href="#contact" class="link">Contact Form</a>
+                  <a href="#" class="link">Our Offices</a>
+                </div>
+              </div>
+            </div>
             <div class="footer-bottom">
-              <span>© <span id="year"></span> YourBrand. All rights reserved.</span>
+              <div class="sub-links">
+                <span>© <span id="year"></span> YourBrand. All Rights Reserved.</span>
+                <a href="#" class="link">Terms & Conditions</a>
+              </div>
+              <div class="socials">
+                <a href="#" aria-label="social 1"><img src="assets/icons/social_1.svg" alt="" width="24" height="24"></a>
+                <a href="#" aria-label="social 2"><img src="assets/icons/social_2.svg" alt="" width="24" height="24"></a>
+                <a href="#" aria-label="social 3"><img src="assets/icons/social_3.svg" alt="" width="24" height="24"></a>
+                <a href="#" aria-label="social 4"><img src="assets/icons/social_4.svg" alt="" width="24" height="24"></a>
+              </div>
             </div>
           </footer>
         </section>

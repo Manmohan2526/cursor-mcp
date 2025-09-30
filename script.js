@@ -36,6 +36,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Contact form handler
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks! Your message has been sent.');
+      contactForm.reset();
+    });
+  }
+
+  // Footer subscription
+  const footerSub = document.getElementById('footer-sub');
+  if (footerSub) {
+    footerSub.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Subscribed!');
+      footerSub.reset();
+    });
+  }
+
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
